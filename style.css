@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* immagine di sfondo */
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+/* Overlay */
+main {
+    background-color: rgba(0, 0, 0, .6);
+    max-width: 1200px;
+    padding: 120px 100px 100px 100px;
+    border-radius: 10px;
+    margin: 30px auto 0 auto;;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img {
+    width: 250px;
+    text-align: center;
+    margin-bottom: 1em;
+}
+h1 {
+    color: #00dd00;
+    text-align: center;
+    margin-bottom: .3em;
+    font-size: 32px;
+}
+nav {
+    align-self: stretch;
+    display: flex;
+    justify-content: center;
+    background-color: #00dd00;
+    padding: .7em 0;
+}
+nav > a {
+    background-color: #fff;
+    border: solid 1px #000;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #000;
+    margin-right: 6px;
+    padding: 6px 9px;
+}
+nav > a:last-of-type {
+    margin-right: none;
+}
+
+/* Elenco monopatini */
+form {
+    color: #fff;
+    margin: 0;
+}
+form > div {
+    margin: 1.5em 0;
+}
+
+/* Selezione */
+input {
+    margin-right: .2em;
+}
+label {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* Dati monopattino */
+p {
+    margin-top: .3em;
+    font-size: 16px;
+}
+span {
+    font-size: 20px;
+}
+
+/* Stato carica */
+#carica-Gino22::after {
+    content: " ";
+    display: block;
+    width: 350px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #F5B453;
+    margin-top: .2em;
+}
+#carica-Mike24::after {
+    content: " ";
+    display: block;
+    width: 600px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #1EC31E;
+    margin-top: .2em;
+}
+#carica-Fede154::after {
+    content: " ";
+    display: block;
+    width: 150px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #BE4141;
+    margin-top: .2em;
+}
+
+/* Responsive tablet */
+@media screen and (max-width: 900px){
+    main {
+        margin: 0;
+        padding: 1em 2em;
+        height: 100vh;
+    }
+
+    #carica-Gino22::after {
+        width: 35%;
+    }
+    #carica-Mike24::after {
+        width: 60%;
+    }
+    #carica-Fede154::after {
+        width: 15%;
+    }
+}
+
+/* Responsive smartphone */
+@media screen and (max-width: 600px) {
+    
+    main {
+        padding: 1em 2em;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    nav {
+        padding: 1em 1em;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    nav > a {
+        margin: .5em 0
+    }
+}
